@@ -1,0 +1,345 @@
+/*style.css*/
+
+.centerBox {
+  margin: 50px auto 0;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn {
+  color: white;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  background-color: #3CBFF0;
+}
+
+.btnFacebook {
+  color: white;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  background-color: #385490;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-lg, .btn-sm, .btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 17px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+.hr-with-text {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
+  margin: 15px 0 20px;
+}
+
+.hr-with-text > span {
+  position: relative;
+  display: inline-block;
+}
+
+.hr-with-text > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.hr-with-text > span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.hr-with-text > span:before, .hr-with-text > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: rgba(178, 190, 199, 0.5);
+}
+
+.AlAcc {
+    text-align: center;
+    font-weight: 500;
+    color: #3CBFF0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+}
+
+.profil-team-photo {
+  width: 100%;
+}
+
+.col-lg-8 {
+  margin-top: 25px;
+}
+
+.col-lg-4 {
+  margin-top: 25px;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background-color: #eee;
+  border-color: #337ab7;
+}
+
+.open > a {
+  outline: 0;
+}
+
+a {
+  color: #3CBFF0;
+  text-decoration: none;
+}
+
+.navbar-default {
+  background-color: black;
+  border-color: #e7e7e7;
+}
+
+.teamLogo {
+  width: 100%;
+}
+
+.start-box-club-title {
+  text-align: center;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.navbar {
+  position: relative;
+  height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #F8F8F8;
+}
+
+.sidebar {
+  background-color: #F8F8F8 !important;
+}
+
+.clubFollow {
+  margin-top: 10px;
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #F8F8F8;
+}
+
+.circle-red {
+  color: #ED1248;
+  border: 2px solid white;
+  border-radius: 9px;
+}
+
+.circle-standard {
+  color: black;
+  border: 2px solid #3CBFF0;
+  border-radius: 9px;
+}
+
+.bilder-container {
+width: 100% !important;
+}
+
+.kv-main {
+    width: 100% !important;
+}
+
+.container-manueller-upload {
+    width: 100% !important;
+}
+
+.col-md-8 {
+    width: 12.5%;
+}
+
+/*
+.btn-registrieren:active, .btn-registrieren.active, .open > .dropdown-toggle.btn-registrieren {
+    border-radius: 9px;
+    padding: 8px;
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-top: 2px;
+    margin-right: 27px;
+    width: 103px;
+    background-color: black !important;
+    font-weight: bold;
+    color: #3CBFF0;
+    font-size: 14pt;
+}
+*/
+
+.btn-registrieren {
+    font-size: 14pt;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; 
+    background-color: black !important;
+    color: #3CBFF0;
+    font-size: 18px !important;
+    font-weight: bold;
+}
+
+.btn-registrieren:hover {
+/*    background-color: #8dcdf5 !important;*/
+    color: white !important;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px !important;
+    padding: 7px 9px !important;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.btn-anmelden:active, .btn-anmelden.active, .open > .dropdown-toggle.btn-anmelden {
+    border-radius: 9px;
+    padding: 8px;
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-top: 6px;
+    margin-right: 27px;
+    width: 103px;
+    background-color: black !important;
+    font-weight: bold;
+}
+
+.btn-anmelden {
+    background-color: rgba(0,0,0,.0) !important;
+    word-spacing: 2px;
+    color: #555555;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 60px;
+}
+
+.btn-anmelden:hover {
+    color: white !important;
+}
+
+
+.fa-search {
+    font-size: 17pt !important;
+    border: 0px solid;
+    color: #3CBFF0;
+}
+    
+.navbar-form {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    height: 50px !important;
+}
+
+.search-bar {
+    height: 48px !important;
+    width: 130% !important;
+    background-color: #212121 !important;
+    border: 0px solid !important;
+    margin-left: 50px;
+    font-size: 16pt;
+}
+
+.search-bar[placeholder]{
+    color: #3CBFF0 !important;
+}
+
+.btn-default {
+    height: 48px;
+    background-color: #212121 !important;
+    border: 0px solid !important;
+}
+
+.panel {
+    border: 0px solid !important;
+}
+
+.col-sm-12 {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+}
+
+.fa-plus-square-o {
+    color: #3CBFF0 !important;
+}
+
+.fa-plus-square-o:before {
+    position: relative;
+    top: 3px;
+}
+
+.fa-plus-square-o:hover {
+    color: white !important;
+}
+
+.thead-bg-color {
+    background-color: #3CBFF0;
+    color: white;
+}
+
+table.dataTable thead .sorting:after {
+    color: white !important;
+}
+
+.table-bordered {
+    border-bottom: 1px solid #ddd !important;
+    border-right: 0px solid #ddd !important;
+    border-left: 0px solid #ddd !important;
+}
+

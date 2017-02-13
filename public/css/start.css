@@ -1,0 +1,40 @@
+/*start.css*/
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background-color: #eee;
+  border-color: #337ab7;
+}
+
+.open > a {
+  outline: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-default {
+  background-color: #ED1248;
+  border-color: #e7e7e7;
+}
+
+.teamLogo {
+  width: 100%;
+}
+
+.start-box-club-title {
+  text-align: center;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.fa-circle {
+  color: red;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
