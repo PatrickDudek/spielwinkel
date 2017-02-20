@@ -2,14 +2,16 @@
 
   {{> navbar}} 
   {{> clubsidebar}} 
-  {{> clubprofiledetails}}
+  {{> editclubprofile}}
   
 </template>
 
 <template name="clubprofiledetails">
   <div id="page-wrapper">
     <div class="row">
-      <h1 class="page-header">{{{club.name}}}</h1>
+      <h1 class="page-header">Clubs<a href="#" class="btn btn-primary btn-header float-right">Create New Club</a></h1>
+      
+      <div class="clearfix"></div>
     </div>
     <div class="row">
       <div class="col-sm-12">
@@ -26,7 +28,51 @@
 </template>
 
 <template name="editclubprofile">
-  <div role="navigation" class="navbar-default sidebar">
-    {{! edit user profile here }}
+  <div id="page-wrapper">
+    <div class="row">
+      <h1 class="page-header">Clubs</h1>
+      
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="Club Name">Club Name</label>
+          <input name="Club Name" id="clubName" type="text" class="form-control" placeholder="Club Name"/>
+        </div>
+        <div class="form-group">
+          <label for="Sport Type">Sport Type</label>
+          <input name="Sport Type" id="sportType" type="text" class="form-control" placeholder="Sport Type"/>
+        </div>
+        <div class="form-group">
+          <label for="Division">Division</label>
+          <input name="Division" id="division" type="text" class="form-control" placeholder="Division"/>
+        </div>
+        <div class="form-group">
+          <label for="Address">Sports Ground</label>
+          <input name="Address" id="addressNumber" type="text" class="form-control" placeholder="Street Number"/>
+          <input name="Address" id="addressStreet" type="text" class="form-control" placeholder="Street"/>
+          <input name="Address" id="addressPostCode" type="text" class="form-control" placeholder="Postal Code"/>
+          <input name="Address" id="city" type="text" class="form-control" placeholder="City"/>
+          <input name="Address" id="state" type="text" class="form-control" placeholder="State"/>
+        </div>
+        <div class="form-group">
+          <label for="Contact Number">Contact Number</label>
+          <input name="Contact Number" id="clubTel" type="text" class="form-control" placeholder="Telephone"/>
+        </div>
+        <div class="form-group">
+          <label for="Website">Website</label>
+          <input name="Website" id="url" type="text" class="form-control" placeholder="http://www.yourwebsite.com"/>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <img id="imgLogo" class="img-rounded img-responsive" src="http://placehold.it/350x350?text=add+team+logo"/>
+          <input name="Team Logo" id="teamLogo" type="file" class="hidden"/>
+          <label for="Team Logo"><small class="grey">Recommended size 350x350</small></label>
+        </div>
+        
+      </div>
+    </div>
   </div>
 </template>

@@ -26,7 +26,7 @@ Template.navbar.helpers({
 });
 
 Template.registerHelper('logout', function() {
-  var logout = '<a href="javascript:void(0)" id="logout" class="btn btn-login btn-small">Logout</a>';
+  var logout = '<a href="#" id="logout" class="btn btn-login btn-small">Logout</a>';
   return logout;
 });
 
