@@ -1,0 +1,26 @@
+<template name="clubprofile">
+
+  {{> navbar}} 
+  {{> clubsidebar}} 
+  {{> clubprofiledetails}}
+  
+</template>
+
+<template name="clubprofiledetails">
+  <div id="page-wrapper">
+    <div class="row">
+      <h1 class="page-header">{{{clubname}}}</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <p>User profile information will exist here.</p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="clubsidebar">
+  <div role="navigation" class="navbar-default sidebar">
+    {{! sidebar for clubs here }}
+  </div>
+</template>

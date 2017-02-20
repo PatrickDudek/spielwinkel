@@ -1,5 +1,22 @@
 /*style.css*/
 
+.lg-pad{
+  margin-bottom: 23px;
+}
+
+.login-area.hidden {
+  display: none;
+}
+.login-area {
+  display: block;
+  position: relative;
+  right:245px;
+  top:10px;
+}
+.nav > li > a.btn-login {
+  margin: 7px 7px 0 0;
+  padding:6px 10px;
+}
 .centerBox {
   margin: 50px auto 0;
 }
@@ -156,7 +173,6 @@ a {
 .navbar {
   position: relative;
   height: 50px;
-  margin-bottom: 20px;
   border: 1px solid #F8F8F8;
 }
 
@@ -251,27 +267,24 @@ width: 100% !important;
 
 .btn-anmelden:active, .btn-anmelden.active, .open > .dropdown-toggle.btn-anmelden {
     border-radius: 9px;
-    padding: 8px;
+    padding: 10px 15px;
     margin: 0 auto;
     vertical-align: middle;
-    margin-top: 6px;
-    margin-right: 27px;
-    width: 103px;
-    background-color: black !important;
+    background-color: black;
     font-weight: bold;
 }
 
 .btn-anmelden {
-    background-color: rgba(0,0,0,.0) !important;
+    background-color: rgba(0,0,0,0);
     word-spacing: 2px;
     color: #555555;
     font-weight: bold;
     font-size: 18px;
-    margin-right: 60px;
 }
 
-.btn-anmelden:hover {
-    color: white !important;
+.nav > li > a.btn-anmelden:hover, .nav > li > a.btn-anmelden:focus {
+  color: white;
+  background: black;
 }
 
 
@@ -289,11 +302,11 @@ width: 100% !important;
 
 .search-bar {
     height: 48px !important;
-    width: 130% !important;
+    width: 200% !important;
     background-color: #212121 !important;
-    border: 0px solid !important;
-    margin-left: 50px;
-    font-size: 16pt;
+    border:none;
+    margin-left: 18px;
+    font-size: 14pt;
 }
 
 .search-bar[placeholder]{
