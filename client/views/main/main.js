@@ -35,32 +35,4 @@ Template.logoutButton.events({
       Meteor.logout([Router.go('/')]);
     }
 });
-//Global Templates
 
-//Template.registerHelper( 'login', () => {
-//  let login = Login.find();
-//  
-//  if ( login ) {
-//    return login;
-//  }
-//});
-//
-//Template.registerHelper( 'signup', () => {
-//  let signup = Signup.find();
-//  
-//  if ( signup ) {
-//    return signup;
-//  }
-//});
-
-
-//Template.registerHelper('logout', function() {
-//  var logout = '<a href="#" id="logout" class="logout">LOGOUT</a>';
-//  return logout;
-//});
-//
-//Template.logoutButton.events({
-//    'click #logout': function(event) {
-//      Meteor.logout([Router.go('/home')]);
-//    }
-//});
