@@ -25,7 +25,16 @@ Template.navbar.helpers({
   template_signup: 'login'
 });
 
+Template.registerHelper('logout', function() {
+  var logout = '<a href="javascript:void(0)" id="logout" class="btn btn-login btn-small">Logout</a>';
+  return logout;
+});
 
+Template.logoutButton.events({
+    'click #logout': function(event) {
+      Meteor.logout([Router.go('/')]);
+    }
+});
 //Global Templates
 
 //Template.registerHelper( 'login', () => {
