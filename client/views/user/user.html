@@ -1,7 +1,7 @@
 <template name="userprofile">
 
   {{> navbar}} 
-  {{> sidebar}} 
+  {{> usersidebar}} 
   {{> userprofiledetails}}
   
 </template>
@@ -16,5 +16,17 @@
         <p>User profile information will exist here.</p>
       </div>
     </div>
+  </div>
+</template>
+
+<template name="usersidebar">
+  <div role="navigation" class="navbar-default sidebar">
+    {{! sidebar for user here }}
+  </div>
+</template>
+
+<template name="edituserprofile">
+  <div role="navigation" class="navbar-default sidebar">
+    {{! edit user profile here }}
   </div>
 </template>

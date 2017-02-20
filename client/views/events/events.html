@@ -1,12 +1,10 @@
-<template name="clubprofile">
-
+<template name="addevent">
   {{> navbar}} 
-  {{> clubsidebar}} 
-  {{> clubprofiledetails}}
-  
+  {{> eventsidebar}} 
+  {{> eventdetails}}
 </template>
 
-<template name="clubprofiledetails">
+<template name="eventdetails">
   <div id="page-wrapper">
     <div class="row">
       <h1 class="page-header">{{{club.name}}}</h1>
@@ -19,13 +17,13 @@
   </div>
 </template>
 
-<template name="clubsidebar">
+<template name="eventsidebar">
   <div role="navigation" class="navbar-default sidebar">
     {{! sidebar for clubs here }}
   </div>
 </template>
 
-<template name="editclubprofile">
+<template name="editevent">
   <div role="navigation" class="navbar-default sidebar">
     {{! edit user profile here }}
   </div>
