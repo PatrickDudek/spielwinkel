@@ -6,10 +6,12 @@
   
 </template>
 
+
+
 <template name="userprofiledetails">
   <div id="page-wrapper">
     <div class="row">
-      <h1 class="page-header">{{{user.name}}}</h1>
+      <h1 class="page-header">{{{user.name}}} Mike Example</h1>
     </div>
     <div class="row">
       <div class="col-sm-12">
@@ -18,6 +20,7 @@
           
           
           <div class="row mailbox-wrapper">
+<!--
 <div class="col-md-4">
 
     <div class="panel-layout">
@@ -87,36 +90,13 @@
     
 
 </div>
-<div class="col-md-8">
-
-    <div class="content-box">
-        
-    </div>
-
-<!--
-    <div class="content-box bg-white post-box">
-        <textarea name="" class="textarea-autosize" placeholder="What are you doing right now?"></textarea>
-        <div class="button-pane">
-            <a href="#" class="btn btn-md btn-link hover-white" title="">
-                <i class="glyph-icon icon-volume-down"></i>
-            </a>
-            <a href="#" class="btn btn-md btn-link hover-white" title="">
-                <i class="glyph-icon icon-video-camera"></i>
-            </a>
-            <a href="#" class="btn btn-md btn-link hover-white" title="">
-                <i class="glyph-icon icon-microphone"></i>
-            </a>
-            <a href="#" class="btn btn-md btn-link hover-white" title="">
-                <i class="glyph-icon icon-picture-o"></i>
-            </a>
-
-            <a href="#" class="btn btn-md btn-post float-right btn-success" title="">
-                Share it!
-            </a>
-
-        </div>
-    </div>
 -->
+<div class="col-sm-12">
+
+    <div class="row">
+        
+
+
 
     <div class="example-box-wrapper">
         <ul class="list-group row list-group-icons">
@@ -607,6 +587,8 @@
     </div>
 
 </div>
+        </div>
+
 </div>
           
           
@@ -628,9 +610,20 @@
 </template>
 
 <template name="usersidebar">
-  <div role="navigation" class="navbar-default sidebar">
-    {{! sidebar for user here }}
-  </div>
+
+
+<div role="navigation" class="navbar-default sidebar">
+      <div class="sidebar-nav navbar-collapse">
+        <ul id="side-menu" class="nav in">
+          <li class="sidebar-search">
+            <div class="input-group custom-search-form"><img class="img-profile" src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg"></div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>    
+    
+    
 </template>
 
 <template name="edituserprofile">
