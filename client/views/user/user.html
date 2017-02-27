@@ -1,145 +1,99 @@
-<template name="userprofile">
-
-  {{> navbar}} 
-  {{> usersidebar}} 
-  {{> userprofiledetails}}
+<template name="userprofile"> 
+  {{> navbar}}
+  {{> usersidebar}}
+  {{#if currentUser}} 
+    {{> editprofiledetails}}
+  {{else}}
+    {{> userprofiledetails}}
+  {{/if}}
   
 </template>
-
-
-
-<template name="userprofiledetails">
+<template name="editprofiledetails">
   <div id="page-wrapper">
     <div class="row">
-      <h1 class="page-header">{{{user.name}}} Mike Example</h1>
+      <h1 class="page-header">{{{user.name}}}</h1>
     </div>
     <div class="row">
       <div class="col-sm-12">
-          
-              
-          
-          
-          <div class="row mailbox-wrapper">
-
-<div class="col-sm-12">
-
-    <div class="row">
-        
-
-
-
-    <div class="example-box-wrapper">
-        
-        <div class="tab-content">
-            
-            <div class="tab-pane pad0A fade active in" id="tab-example-4">
-                <div class="content-box">
-                    <form class="form-horizontal pad15L pad15R bordered-row">
+        <div class="row mailbox-wrapper">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="example-box-wrapper">
+                <div class="tab-content">
+                  <div class="tab-pane pad0A fade active in" id="tab-example-4">
+                    <div class="content-box">
+                      <form class="form-horizontal pad15L pad15R bordered-row">
                         <div class="form-group remove-border">
-                            <label class="col-sm-3 control-label">First Name:</label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="" placeholder="First name...">
-                            </div>
+                          <label class="col-sm-3 control-label">First Name:</label>
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control" id="" placeholder="First name..."> </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-3 control-label">Last Name:</label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="" placeholder="Last name...">
-                            </div>
+                          <label class="col-sm-3 control-label">Last Name:</label>
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control" id="" placeholder="Last name..."> </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-3 control-label">Favorite sport:</label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="" placeholder="Last name...">
-                            </div>
+                          <label class="col-sm-3 control-label">Favorite sport:</label>
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control" id="" placeholder="Last name..."> </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-3 control-label">Email:</label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="" placeholder="Email address...">
-                            </div>
+                          <label class="col-sm-3 control-label">Email:</label>
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control" id="" placeholder="Email address..."> </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-3 control-label">Website:</label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="" placeholder="Website...">
-                            </div>
+                          <label class="col-sm-3 control-label">Website:</label>
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control" id="" placeholder="Website..."> </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-3 control-label">About me:</label>
-                            <div class="col-sm-6">
-                                <textarea name="" rows="3" class="form-control textarea-autosize"></textarea>
-                            </div>
+                          <label class="col-sm-3 control-label">About me:</label>
+                          <div class="col-sm-6">
+                            <textarea name="" rows="3" class="form-control textarea-autosize"></textarea>
+                          </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-3 control-label">Profile Picture:</label>
-                            <div class="col-sm-6">
-                                <div class="fileinput fileinput-new" data-provides="fileinput">
-                                    <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
-                                    <div>
-                                    <span class="btn btn-default btn-file">
-                                        <span class="fileinput-new">Select image</span>
-                                        <span class="fileinput-exists">Change</span>
-                                        <input type="file" name="...">
-                                    </span>
-                                        <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
-                                    </div>
-                                </div>
+                          <label class="col-sm-3 control-label">Profile Picture:</label>
+                          <div class="col-sm-6">
+                            <div class="fileinput fileinput-new" data-provides="fileinput">
+                              <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                              <div> <span class="btn btn-default btn-file">
+                                        <span class="fileinput-new">Select image</span> <span class="fileinput-exists">Change</span>
+                                <input type="file" name="..."> </span> <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a> </div>
                             </div>
+                          </div>
                         </div>
-                    </form>
-                    <div class="button-pane mrg20T">
+                      </form>
+                      <div class="button-pane mrg20T">
                         <button class="btn btn-info">Save</button>
                         <button class="btn btn-link font-gray-dark">Cancel</button>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-
-</div>
-        </div>
-
-</div>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
       </div>
     </div>
   </div>
 </template>
 
 <template name="usersidebar">
-
-
-<div role="navigation" class="navbar-default sidebar">
-     
+  <div role="navigation" class="navbar-default sidebar">
     <div class="sidebar-nav navbar-collapse">
-        <ul id="side-menu" class="nav in">
-          <li class="sidebar-search">
-            <div class="input-group custom-search-form"><img class="img-profile" src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg"></div>
-          </li>
-          
-        </ul>
-      </div>
-    </div>    
-    
-    
+      <ul id="side-menu" class="nav in">
+        <li class="sidebar-search">
+          <div class="input-group custom-search-form"><img class="img-profile" src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
-<template name="edituserprofile">
-  <div role="navigation" class="navbar-default sidebar">
-    {{! edit user profile here }}
-  </div>
+<template name="userprofiledetails">
+
 </template>

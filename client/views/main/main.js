@@ -14,6 +14,11 @@ Router.route('/home', function () {
 });
 
 Router.route('/user', function () {
+//  if(Meteor.user()) {
+//    this.render('userprofile');
+//  } else {
+//    this.redirect('/home');
+//  }
   this.render('userprofile');
 });
 
