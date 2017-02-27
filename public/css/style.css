@@ -305,13 +305,10 @@ width: 100% !important;
     
 .navbar-form {
     margin-top: 0px !important;
-    margin-bottom: 0px !important;
-    height: 50px !important;
 }
 
 .search-bar {
     height: 48px !important;
-    width: 200% !important;
     background-color: #212121 !important;
     border:none;
     margin-left: 18px;
@@ -374,3 +371,6 @@ table.dataTable thead .sorting:after {
     margin-left: 28px;
 }
 
+.input-group-btn {
+    padding-left: 18px;
+}

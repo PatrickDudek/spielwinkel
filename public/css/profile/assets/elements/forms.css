@@ -72,10 +72,7 @@
       height: 34px;
       padding: 6px 12px;
       color: #2b2f33;
-      border: #dfe8f1 solid 1px;
-      -webkit-box-shadow: inset 1px 1px 3px #f6f6f6;
-      -moz-box-shadow: inset 1px 1px 3px #f6f6f6;
-      box-shadow: inset 1px 1px 3px #f6f6f6;
+      
   }
   .chosen-container-multi.chosen-with-drop.chosen-container-active {
       border: #ddd solid 1px;
