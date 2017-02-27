@@ -1,11 +1,7 @@
 <template name="userprofile"> 
   {{> navbar}}
   {{> usersidebar}}
-  {{#if currentUser}} 
-    {{> editprofiledetails}}
-  {{else}}
-    {{> userprofiledetails}}
-  {{/if}}
+  {{> editprofiledetails}}
   
 </template>
 <template name="editprofiledetails">
