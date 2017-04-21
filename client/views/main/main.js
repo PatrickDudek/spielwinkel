@@ -22,13 +22,18 @@ Router.route('/user', function () {
   this.render('userprofile');
 });
 
-Router.route('/club', function () {
+Router.route('/add-team', function () {
   this.render('clubprofile');
 });
 
-Router.route('/club-create', function () {
+Router.route('/club-choose', function () {
   this.render('chooseclub');
 });
+
+Router.route('/club-create', function () {
+  this.render('createclub');
+});
+
 
 Template.navbar.helpers({  
   template_signup: 'login'

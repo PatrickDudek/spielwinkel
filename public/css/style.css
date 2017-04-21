@@ -374,3 +374,22 @@ table.dataTable thead .sorting:after {
 .input-group-btn {
     padding-left: 18px;
 }
+
+.dropdown-toggle {
+    color: #333 !important;
+    background-color: #fff !important;
+    border-color: #ccc !important;
+    border: 1px solid #ccc !important;
+}
+
+.form-group-top {
+   margin-top: 15px; 
+}
+
+.bootstrap-select.btn-group .dropdown-menu li.active small {
+    color: inherit !important;
+}
+
+.choose-label {
+    padding-top: 0px !important;
+}

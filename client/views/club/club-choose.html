@@ -1,0 +1,53 @@
+<template name="chooseclub"> 
+  {{> usernavbar}} 
+  {{> clubsidebar}}
+  {{> chooseclubprofile}} 
+</template>
+
+<template name="chooseclubprofile">
+  <div id="page-wrapper">
+    <div class="row">
+      <h1 class="page-header">Choose Team</h1> </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="row mailbox-wrapper">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="example-box-wrapper">
+                <div class="tab-content">
+                  <div class="tab-pane pad0A fade active in" id="tab-example-4">
+                    <div class="content-box ">
+                      <form class="form-horizontal pad15L pad15R">
+                        <div class="form-group form-group-top">
+                          <label for="Club Name" class="col-sm-3 control-label">Choose your Club:</label>
+                          <div class="col-sm-6">
+                            <select class="selectpicker btn-selectpicker" data-show-subtext="true" data-live-search="true">
+                              <option data-subtext="table tennis">TSG Heilbronn</option>
+                              <option data-subtext="rugby">SV Gütersloh</option>
+                              <option data-subtext="football">SpvGG 1845 Thalkirchen</option>
+                              <option data-subtext="soccer">SV Neckarsulm</option>
+                            </select>
+                            <button class="btn btn-info " ><a href="/add-team">GO</a></button>  
+                          </div>
+                        </div>
+                        </form>
+                        
+                        <form class="form-horizontal pad15L pad15R mrg20T">
+                        <div class="form-group form-group-top">
+                          <label for="Club Name" class="col-sm-3 control-label">You can´t find your club?</label>
+                          <div class="col-sm-6">
+                              <button class="btn btn-info"><a href="/club-create">Create your club profile in 1 min!</a></button>  
+                          </div>
+                        </div>
+                        </form>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

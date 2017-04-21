@@ -43,39 +43,61 @@
                     <div class="content-box">
                       <form class="form-horizontal pad15L pad15R bordered-row">
                         <div class="form-group remove-border">
-                          <label for="Club Name" class="col-sm-3 control-label">Club Name:</label>
+                          <label for="Club Name" class="col-sm-3 control-label choose-label">Club Name:</label>
                           <div class="col-sm-6">
-                            <input name="Club Name" type="text" class="form-control" id="clubName" placeholder="Club Name"> </div>
+                              <p name="Club Name" type="text" id="clubName">Club I choose before</p></div>
                         </div>
                         <div class="form-group">
-                          <label for="Sport Type" class="col-sm-3 control-label">Sport Type:</label>
+                          <label for="Sport Type" class="col-sm-3 control-label choose-label">Sport Department:</label>
                           <div class="col-sm-6">
-                            <input name="Sport Type" type="text" class="form-control" id="sportType" placeholder="Sport Type"> </div>
+                            <p name="Club Name" type="text" id="clubName">sport department I choose before</p></div>
                         </div>
+                       
+                        <div class="form-group">
+                          <label for="Adress" class="col-sm-3 control-label choose-label">Sports Ground:</label>
+                          <div class="col-sm-6">
+                            <p  type="text" id="street">long street</p>
+                            <p  type="text" id="streetNumber">101</p>
+                            <p  type="text" id="postalCode">49329</p>
+                            <p  type="text" id="city">cape town</p>
+                            <p  type="text" id="state">bavaria</p>
+                        </div>
+                        </div>   
+                          
+                          <div class="form-group">
+                          <label for="Website" class="col-sm-3 control-label choose-label">Website:</label>
+                          <div class="col-sm-6">
+                            <p name="Club Name" type="text" id="clubName">wwww.example.de</p></div>
+                        </div>
+                          
+                        <div class="form-group">
+                          <label for="Division" class="col-sm-3 control-label">Playgroup:</label>
+                          <div class="col-sm-6">
+                            <select name="Divisopn" type="text" class="form-control" id="division" placeholder="playgroup">
+                                <option>Masters</option>
+                                <option>Ladies</option>
+                                <option>Youth</option>
+                                <option>Girls</option>
+                                <option>Schüler</option>
+                                <option>Schülerinnen</option>
+                                
+                              </select>    
+                                
+                                </div>
+                        </div>  
+                          
                         <div class="form-group">
                           <label for="Division" class="col-sm-3 control-label">Division:</label>
                           <div class="col-sm-6">
                             <input name="Divisopn" type="text" class="form-control" id="division" placeholder="Division"> </div>
                         </div>
-                        <div class="form-group">
-                          <label for="Adress" class="col-sm-3 control-label">Sports Ground:</label>
-                          <div class="col-sm-6">
-                            <input name="Address" id="addressStreet" type="text" class="form-control" placeholder="Street">
-                            <input name="Address" id="addressNumber" type="text" class="form-control" placeholder="Street Number">
-                            <input name="Address" id="addressPostCode" type="text" class="form-control" placeholder="Postal Code">
-                            <input name="Address" id="city" type="text" class="form-control" placeholder="City">
-                            <input name="Address" id="state" type="text" class="form-control" placeholder="State"> </div>
-                        </div>
+                          
                         <div class="form-group">
                           <label for="Contact Number" class="col-sm-3 control-label">Contact Number:</label>
                           <div class="col-sm-6">
                             <input name="Contact Number" id="clubTel" type="text" class="form-control" placeholder="Telephone"> </div>
                         </div>
-                        <div class="form-group">
-                          <label for="Website" class="col-sm-3 control-label">Website:</label>
-                          <div class="col-sm-6">
-                            <input name="Website" id="url" type="text" class="form-control" placeholder="Website..."> </div>
-                        </div>
+                       
                         <div class="form-group">
                           <label for="About me" class="col-sm-3 control-label">About us:</label>
                           <div class="col-sm-6">
@@ -83,7 +105,7 @@
                           </div>
                         </div>
                         <div class="form-group">
-                          <label for="Club Logo" class="col-sm-3 control-label">Club Logo:</label>
+                          <label for="Club Logo" class="col-sm-3 control-label">Team photo:</label>
                           <div class="col-sm-6">
                             <div class="fileinput fileinput-new" data-provides="fileinput">
                               <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
@@ -97,8 +119,8 @@
                         </div>
                       </form>
                       <div class="button-pane mrg20T">
-                        <button class="btn btn-info">Save</button>
-                        <button class="btn btn-link font-gray-dark">Cancel</button>
+                        <button class="btn btn-link font-gray-dark">Back</button>  
+                        <button class="btn btn-info">Publish</button>
                       </div>
                     </div>
                   </div>
