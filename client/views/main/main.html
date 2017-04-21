@@ -14,72 +14,44 @@
   <link href="css/dataTables.bootstrap.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-    
-    <!-- ELEMENTS -->
-
-<link rel="stylesheet" type="text/css" href="css/profile/elements/badges.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/buttons.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/content-box.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/dashboard-box.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/forms.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/images.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/info-box.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/invoice.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/loading-indicators.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/menus.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/panel-box.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/response-messages.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/responsive-tables.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/ribbon.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/social-box.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/tables.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/tile-box.css">
-<link rel="stylesheet" type="text/css" href="css/profile/elements/timeline.css">
-
-    
-<link href="css/profile/images.css" rel="stylesheet">
-
-
-<!-- Components theme -->
-
-<link rel="stylesheet" type="text/css" href="css/profile/assets/themes/components/default.css">
-
-  
-    
-</head>
+  <!-- ELEMENTS -->
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/badges.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/buttons.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/content-box.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/dashboard-box.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/forms.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/images.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/info-box.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/invoice.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/loading-indicators.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/menus.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/panel-box.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/response-messages.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/responsive-tables.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/ribbon.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/social-box.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/tables.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/tile-box.css">
+  <link rel="stylesheet" type="text/css" href="css/profile/elements/timeline.css">
+  <link href="css/profile/images.css" rel="stylesheet">
+  <!-- Components theme -->
+  <link rel="stylesheet" type="text/css" href="css/profile/assets/themes/components/default.css"> </head>
 
 <body>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/custom.js"></script>
-    
-  
-
-
-    
-    
 </body>
-
-<template name="home">
-  
+<template name="home"> 
   {{> navbar}} 
   {{> sidebar}} 
-  {{> eventLists}}
-  
+  {{> eventLists}} 
 </template>
 
 <template name="navbar">
-  
   <nav role="navigation" class="navbar navbar-default navbar-static-top">
-    
-    <div class="navbar-header">
-      <img src="img/spielwinkel_logo.svg" class="navbar-brand" />
-      <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+    <div class="navbar-header"> <img src="img/spielwinkel_logo.svg" class="navbar-brand" />
+      <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
     </div>
-    
     <div class="col-sm-5 col-md-5">
       <form role="search" class="navbar-form">
         <div class="input-group">
@@ -90,25 +62,11 @@
         </div>
       </form>
     </div>
-    
-    <ul class="nav navbar-top-links navbar-right in">
-      {{#if currentUser}}
-        <li>  
-          <a href="/home" role="button" class="btn btn-registrieren">Home</a>
-        </li>
-        <li>  
-          <a href="/club" role="button" class="btn btn-registrieren">Create Club</a>
-        </li>
-        <li>  
-          {{> logoutButton}}
-        </li>
-      {{else}}
-        <li>
-          {{> login}}          
-        </li>
-      {{/if}}
-    </ul>
-
+    <ul class="nav navbar-top-links navbar-right in"> {{#if currentUser}}
+      <li> <a href="/home" role="button" class="btn btn-registrieren">Home</a> </li>
+      <li> <a href="/club" role="button" class="btn btn-registrieren">Create Club</a> </li>
+      <li> {{> logoutButton}} </li> {{else}}
+      <li> {{> login}} </li> {{/if}} </ul>
   </nav>
 </template>
 
@@ -118,12 +76,11 @@
       <ul id="side-menu" class="nav in">
         <li class="sidebar-search">
           <div class="input-group custom-search-form">
-            <h3 class="lg-pad">Filter</h3> 
-          </div>
+            <h3 class="lg-pad">Filter</h3> </div>
         </li>
         <li><a href="#">City<span class="fa arrow"></span></a>
           <ul class="nav nav-second-level">
-<!--
+            <!--
             {{#each city in cities}}
               
             {{/each}}
@@ -132,7 +89,7 @@
         </li>
         <li><a href="#">Sports<span class="fa arrow"></span></a>
           <ul class="nav nav-second-level">
-<!--
+            <!--
             {{#each sport in sports}}
               
             {{/each}}
@@ -141,7 +98,7 @@
         </li>
         <li><a href="#">Division<span class="fa arrow"></span></a>
           <ul class="nav nav-second-level">
-<!--
+            <!--
             {{#each division in divisions}}
 
             {{/each}}
@@ -173,19 +130,16 @@
                     <th class="sorting">City</th>
                   </tr>
                 </thead>
-                <tbody>
-                  {{#each event in events}}}
-                    <tr class="gradeX">
-                      <td class="sorting_1">{{{event.sportType}}}</td>
-                      <td>{{{event.date}}}</td>
-                      <td>{{{event.time}}}</td>
-                      <td>{{{event.homeTeam}}}</td>
-                      <td>{{{event.awayTeam}}}</td>
-                      <td>{{{event.division}}}</td>
-                      <td>{{{event.city}}}</td>
-                    </tr>
-                  {{/each}}
-                </tbody>
+                <tbody> {{#each event in events}}}
+                  <tr class="gradeX">
+                    <td class="sorting_1">{{{event.sportType}}}</td>
+                    <td>{{{event.date}}}</td>
+                    <td>{{{event.time}}}</td>
+                    <td>{{{event.homeTeam}}}</td>
+                    <td>{{{event.awayTeam}}}</td>
+                    <td>{{{event.division}}}</td>
+                    <td>{{{event.city}}}</td>
+                  </tr> {{/each}} </tbody>
               </table>
             </div>
           </div>
@@ -194,4 +148,3 @@
     </div>
   </div>
 </template>
-
