@@ -26,6 +26,10 @@ Router.route('/club', function () {
   this.render('clubprofile');
 });
 
+Router.route('/club-create', function () {
+  this.render('chooseclub');
+});
+
 Template.navbar.helpers({  
   template_signup: 'login'
 });
