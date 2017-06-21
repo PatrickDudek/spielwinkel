@@ -9,8 +9,6 @@ Router.route('/', function () {
   this.render('home');
 });
 
-
-
 Router.route('/user', function () {
   if(Meteor.user()) {
     this.render('userprofile');
