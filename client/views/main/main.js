@@ -19,7 +19,7 @@ Router.route('/user', function () {
 });
 
 Router.route('/add-team', function () {
-  this.render('clubprofile');
+  this.render('addteam');
 });
 
 Router.route('/club-choose', function () {
@@ -28,6 +28,18 @@ Router.route('/club-choose', function () {
 
 Router.route('/club-create', function () {
   this.render('createclub');
+});
+
+Router.route('/club', function () {
+  this.render('clubprofile');
+});
+
+Router.route('/events', function () {
+  this.render('addevent');
+});
+
+Router.route('/events-create', function () {
+  this.render('createevent');
 });
 
 

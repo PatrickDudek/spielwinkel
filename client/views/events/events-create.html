@@ -1,0 +1,161 @@
+<template name="createevent">
+  {{> usernavbar}} 
+  {{> clubsidebar}}
+  {{> eventcreate}} 
+</template>
+
+<template name="eventcreate">
+  <div id="wrapper">
+   
+    <div id="page-wrapper">
+      <div class="container bilder-container">
+        <div class="container kv-main">
+          <div class="page-header">
+            <h1>Upload your events</h1>
+          </div>        
+          <div class="form-group">
+            <input id="file-4" type="file" data-upload-url="#" class="file"><br>
+            <button type="submit" class="btn btn-primary">Submit</button>        
+            <button type="reset" class="btn btn-default">Reset</button>
+          </div>        
+        </div>
+      </div>
+      <div class="container container-manueller-upload">
+        <table id="myTable" class="table order-list">
+          <thead>
+            <tr>
+              <td class="col-md-8">Sportart</td>            
+              <td class="col-md-8">Datum</td>            
+              <td class="col-md-8">Uhrzeit</td>            
+              <td class="col-md-8">Heimmannschaft</td>            
+              <td class="col-md-8">Gastmannschaft</td>            
+              <td class="col-md-8">Liga</td>            
+              <td class="col-md-8">Stadt</td>
+            </tr>
+          </thead>    
+          <tbody>
+            <tr>
+              <td class="col-md-8">
+                <input type="text" name="Sportart" class="form-control">
+              </td>            
+              <td class="col-md-8">
+                <div class="form-group">
+                  <div id="datetimepicker3" class="input-group date">
+                    <input type="date" name="Datum" class="form-control">                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                  </div>
+                </div>        
+              </td>            
+              <td class="col-md-8">
+                <div class="form-group">
+                  <div id="datetimepicker3" class="input-group date">
+                    <input type="time" name="Uhrzeit" class="form-control">                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                  </div>
+                </div>
+              </td>        
+                          
+              <td class="col-md-8">
+                <input type="text" name="Heimmanschaft" class="form-control">
+              </td>            
+              <td class="col-md-8">
+                <input type="text" name="Gastmannschaft" class="form-control">
+              </td>            
+              <td class="col-md-8">
+                <input type="text" name="Liga" class="form-control">
+              </td>            
+              <td class="col-md-8">
+                <input type="text" name="Stadt" class="form-control">
+              </td>            
+              <td class="col-md-8"><a class="deleteRow"></a></td>
+            </tr>
+          </tbody>    
+          <tfoot>
+            <tr>
+              <td colspan="9" style="text-align: left;">
+                <input id="addrow" type="button" value="Add Row" class="btn btn-lg btn-block">
+              </td>
+            </tr>        
+            <tr></tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+    <script src="js/create-table.js"></script>
+    <script>
+    $("#file-0").fileinput({
+    'allowedFileExtensions': ['jpg', 'png', 'gif']
+    });
+    $("#file-1").fileinput({
+    uploadUrl: '#', // you must set a valid URL here else you will get an error
+    allowedFileExtensions: ['jpg', 'png', 'gif'],
+    overwriteInitial: false,
+    maxFileSize: 1000,
+    maxFilesNum: 10,
+    //allowedFileTypes: ['image', 'video', 'flash'],
+    slugCallback: function (filename) {
+    return filename.replace('(', '_').replace(']', '_');
+    }
+    });
+    /*
+    $(".file").on('fileselect', function(event, n, l) {
+    alert('File Selected. Name: ' + l + ', Num: ' + n);
+    });
+    */
+    $("#file-3").fileinput({
+    showUpload: false,
+    showCaption: false,
+    browseClass: "btn btn-primary btn-lg",
+    fileType: "any",
+    previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
+    });
+    $("#file-4").fileinput({
+    uploadExtraData: {kvId: '10'}
+    });
+    $(".btn-warning").on('click', function () {
+    var $el = $("#file-4");
+    if ($el.attr('disabled')) {
+    $el.fileinput('enable');
+    } else {
+    $el.fileinput('disable');
+    }
+    });
+    $(".btn-info").on('click', function () {
+    $("#file-4").fileinput('refresh', {previewClass: 'bg-info'});
+    });
+    /*
+    $('#file-4').on('fileselectnone', function() {
+    alert('Huh! You selected no files.');
+    });
+    $('#file-4').on('filebrowse', function() {
+    alert('File browse clicked for #file-4');
+    });
+    */
+    $(document).ready(function () {
+    $("#test-upload").fileinput({
+    'showPreview': false,
+    'allowedFileExtensions': ['jpg', 'png', 'gif'],
+    'elErrorContainer': '#errorBlock'
+    });
+    /*
+    $("#test-upload").on('fileloaded', function(event, file, previewId, index) {
+    alert('i = ' + index + ', id = ' + previewId + ', file = ' + file.name);
+    });
+    */
+    });
+    
+    script(type='text/javascript').
+                                      $(function () {
+                                      $('#datetimepicker3').datetimepicker({
+                                      format: 'LT'
+                                      });
+                                      });
+  </script>
+</template>
+
+
+
+
+
+
+
+

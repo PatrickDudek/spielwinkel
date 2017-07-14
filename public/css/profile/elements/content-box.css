@@ -4,12 +4,14 @@
     background: #fff;
     margin-bottom: 20px;
 }
+/*
 .content-box,
 .content-box-header {
     position: relative;
     border-width: 1px;
     border-style: solid;
 }
+*/
 .content-box-header {
     font-size: 14px;
     text-transform: uppercase;
@@ -314,7 +316,7 @@ body .button-pane-top {
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 .panel-body {
-    padding: 15px 20px;
+/*    padding: 15px 20px;*/
     position: relative;
 }
 .panel-heading {

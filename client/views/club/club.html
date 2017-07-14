@@ -1,45 +1,41 @@
 <template name="clubprofile">
 
   {{> usernavbar}} 
-  {{> clubsidebar}} 
-  {{> editclubprofile}}
+  {{> clubsidebar2}} 
+  {{> publicclubprofile}}
   
 </template>
 
-<template name="clubprofiledetails">
-  <div id="page-wrapper">
-    <div class="row">
-      <h1 class="page-header">Clubs<a href="#" class="btn btn-primary btn-header float-right">Create New Club</a></h1>
-      
-      <div class="clearfix"></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <p>User profile information will exist here.</p>
-      </div>
-    </div>
-  </div>
-</template>
 
-<template name="clubsidebar">
+
+<template name="clubsidebar2">
     
   <div role="navigation" class="navbar-default sidebar">
-      
-        <div class="form-group sidebar-search">
-          <img id="imgLogo" class="img-rounded img-responsive" src="http://placehold.it/350x350?text=add+team+logo"/>
-          <input name="Team Logo" id="teamLogo" type="file" class="hidden"/>
-          <label for="Team Logo"><small class="grey">Recommended size 350x350</small></label>
-        </div>
-
-    
-  </div>
+      <div class="sidebar-nav navbar-collapse">
+        <ul id="side-menu" class="nav in">
+          <li class="sidebar-search">
+            <div class="input-group custom-search-form"><img src="img/fc_bayern_logo.png" class="teamLogo"></div>
+          </li>
+          <li><a href="#" class="profil-sidebar"> <i aria-hidden="true" class="fa fa-upload"> </i><span class="hidden-xs hidden-sm">Begegnungen hochladen</span></a></li>
+          <li><a href="#" class="profil-sidebar"> <i aria-hidden="true" class="fa fa-pencil"> </i><span class="hidden-xs hidden-sm">Informationen bearbeiten</span></a></li>
+          <li> 
+            <h2 class="deine-teams">Deine Teams</h2>
+          </li>
+          <li> <a href="#" class="profil-sidebar"><img src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg"><span class="hidden-xs hidden-sm">Team 1</span></a></li>
+        </ul>
+      </div>
+    </div>
 </template>
 
-<template name="editclubprofile">
+
+
+<template name="publicclubprofile">
     
     <div id="page-wrapper">
     <div class="row">
-      <h1 class="page-header">add Club</h1>
+        <div class="col-lg-8">
+      <h1 class="page-header">Club name</h1>
+        </div>
     </div>
     <div class="row">
       <div class="col-sm-12">
@@ -62,69 +58,215 @@
             
             <div class="tab-pane pad0A fade active in" id="tab-example-4">
                 <div class="content-box">
-                    <form class="form-horizontal pad15L pad15R bordered-row">
-                        <div class="form-group remove-border">
-                            <label for="Club Name" class="col-sm-3 control-label">Club Name:</label>
-                            <div class="col-sm-6">
-                                <input name="Club Name" type="text" class="form-control" id="clubName" placeholder="Club Name">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="Sport Type" class="col-sm-3 control-label">Sport Department:</label>
-                            <div class="col-sm-6">
-                                <input name="Sport Department" type="text" class="form-control" id="sportType" placeholder="Sport Department (e.g. football, table tennis, etc.)">
-                            </div>
-                        </div>
                     
-                        <div class="form-group">
-                            <label for="Adress" class="col-sm-3 control-label">Sports Ground:</label>
-                            <div class="col-sm-6">
-                                <input name="Address" id="addressStreet" type="text" class="form-control" placeholder="Street">
-                                <input name="Address" id="addressNumber" type="text" class="form-control" placeholder="Street Number">
-                                <input name="Address" id="addressPostCode"  type="text" class="form-control" placeholder="Postal Code">
-                                <input name="Address" id="city" type="text" class="form-control" placeholder="City">
-                                <input name="Address" id="state" type="text" class="form-control" placeholder="State">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="Contact Number" class="col-sm-3 control-label">Contact Number:</label>
-                            <div class="col-sm-6">
-                                <input name="Contact Number" id="clubTel" type="text" class="form-control" placeholder="Telephone">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="Website" class="col-sm-3 control-label">Website:</label>
-                            <div class="col-sm-6">
-                                <input name="Website" id="url" type="text" class="form-control" placeholder="Website...">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="Club Logo" class="col-sm-3 control-label">Club Logo:</label>
-                            
-                            <div class="col-sm-6">
-                                <div class="fileinput fileinput-new" data-provides="fileinput">
-                                    <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
-                                    <div><small class="grey">Recommended size 350x350</small></div>
-                                    <div>
-                                        
-                                    <span class="btn btn-default btn-file">
-                                        
-                                        <span class="fileinput-new">Select Logo</span>
-                                        <span class="fileinput-exists">Change</span>
-                                        <input type="file" name="...">
-                                    </span>
-                                        <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="button-pane mrg20T">
-                        <button class="btn btn-info">Save</button>
-                        <button class="btn btn-link font-gray-dark">Cancel</button>
-                    </div>
+                    
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="panel panel-default"><img src="img/bayern_muenchen_team.jpg" class="profil-team-photo"></div>
+        <h1 class="page-header">Upcoming Events</h1>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div id="dataTables-example_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+              <div class="row">
+                <div class="col-sm-12">
+                  <table id="dataTables-example" role="grid" aria-describedby="dataTables-example_info" width="100%" style="width: 100%" class="table table-striped table-bordered table-hover dataTable no-footer dtr-inline collapsed">
+                    <thead>
+                      <tr role="row">
+                        <th class="sorting_asc">sport type</th>
+                        <th class="sorting">date</th>
+                        <th class="sorting">time</th>
+                        <th class="sorting">home team</th>
+                        <th class="sorting">guest team</th>
+                        <th class="sorting">division</th>
+                        <th class="sorting">city</th>
+                      </tr>
+                    </thead>
+                    <tbody>  
+                      <tr class="odd gradeX">
+                        <td>soocer</td>
+                        <td>18.10.2016</td>
+                        <td>14:00</td>
+                        <td>FC Bayern München</td>
+                        <td>FC Schalke 04</td>
+                        <td>1. Bundesliga</td>
+                        <td>München</td>
+                      </tr>
+                      <tr class="even gradeC">
+                        <td class="sorting_1">volleyball</td>
+                        <td>19.10.2016</td>
+                        <td>16:00</td>
+                        <td>VfB Stuttgart</td>
+                        <td>SV Werder Bremmen</td>
+                        <td>Regionalliga</td>
+                        <td>Stuttgart</td>
+                      </tr>
+                      <tr class="odd gradeX">
+                        <td class="sorting_1">table tennis</td>
+                        <td>20.10.2016</td>
+                        <td>18:00</td>
+                        <td>TSG 1845 Heilbronn</td>
+                        <td>SV Neckarsulm    </td>
+                        <td>Regionalliga</td>
+                        <td>Heilbronn</td>
+                      </tr>
+                      <tr class="even gradeC">
+                        <td class="sorting_1">tennis</td>
+                        <td>23.10.2016</td>
+                        <td>14:00</td>
+                        <td>VfB Stuttgart</td>
+                        <td>SV Werder Bremmen</td>
+                        <td>Verbandsliga</td>
+                        <td>Stuttgart</td>
+                      </tr>
+                      <tr class="odd gradeX">
+                        <td class="sorting_1">rugby</td>
+                        <td>30.10.2016</td>
+                        <td>11:00</td>
+                        <td>Red Bull Hornets</td>
+                        <td>Powerade Bulls</td>
+                        <td>2. Bundesliga</td>
+                        <td>Dresden</td>
+                      </tr>
+                      <tr class="even gradeC">
+                        <td class="sorting_1">handball</td>
+                        <td>02.11.2016</td>
+                        <td>16:00</td>
+                        <td>TSG Göppingen</td>
+                        <td>SV Ultra Heidelberg</td>
+                        <td>Regionalliga</td>
+                        <td>Göppingen</td>
+                      </tr>
+                      <tr class="odd gradeX">
+                        <td class="sorting_1">soocer</td>
+                        <td>18.10.2016</td>
+                        <td>14:00</td>
+                        <td>FC Bayern München</td>
+                        <td>FC Schalke 04</td>
+                        <td>1. Bundesliga</td>
+                        <td>München</td>
+                      </tr>
+                      <tr class="even gradeC">
+                        <td class="sorting_1">volleyball</td>
+                        <td>19.10.2016</td>
+                        <td>16:00</td>
+                        <td>VfB Stuttgart</td>
+                        <td>SV Werder Bremmen</td>
+                        <td>Regionalliga</td>
+                        <td>Stuttgart</td>
+                      </tr>
+                      <tr class="odd gradeX">
+                        <td class="sorting_1">table tennis</td>
+                        <td>20.10.2016</td>
+                        <td>18:00</td>
+                        <td>TSG 1845 Heilbronn</td>
+                        <td>SV Neckarsulm    </td>
+                        <td>Regionalliga</td>
+                        <td>Heilbronn</td>
+                      </tr>
+                      <tr class="even gradeC">
+                        <td class="sorting_1">tennis</td>
+                        <td>23.10.2016</td>
+                        <td>14:00</td>
+                        <td>VfB Stuttgart</td>
+                        <td>SV Werder Bremmen</td>
+                        <td>Verbandsliga</td>
+                        <td>Stuttgart</td>
+                      </tr>
+                      <tr class="odd gradeX">
+                        <td class="sorting_1">rugby</td>
+                        <td>30.10.2016</td>
+                        <td>11:00</td>
+                        <td>Red Bull Hornets</td>
+                        <td>Powerade Bulls</td>
+                        <td>2. Bundesliga</td>
+                        <td>Dresden</td>
+                      </tr>
+                      <tr class="even gradeC">
+                        <td class="sorting_1">handball</td>
+                        <td>02.11.2016</td>
+                        <td>16:00</td>
+                        <td>TSG Göppingen</td>
+                        <td>SV Ultra Heidelberg</td>
+                        <td>Regionalliga</td>
+                        <td>Göppingen</td>
+                      </tr>
+                      <tr class="odd gradeX">
+                        <td class="sorting_1">soocer</td>
+                        <td>18.10.2016</td>
+                        <td>14:00</td>
+                        <td>FC Bayern München</td>
+                        <td>FC Schalke 04</td>
+                        <td>1. Bundesliga</td>
+                        <td>München</td>
+                      </tr>
+                      <tr class="even gradeC">
+                        <td class="sorting_1">volleyball</td>
+                        <td>19.10.2016</td>
+                        <td>16:00</td>
+                        <td>VfB Stuttgart</td>
+                        <td>SV Werder Bremmen</td>
+                        <td>Regionalliga</td>
+                        <td>Stuttgart</td>
+                      </tr>
+                      <tr class="odd gradeX">
+                        <td class="sorting_1">table tennis</td>
+                        <td>20.10.2016</td>
+                        <td>18:00</td>
+                        <td>TSG 1845 Heilbronn</td>
+                        <td>SV Neckarsulm    </td>
+                        <td>Regionalliga</td>
+                        <td>Heilbronn</td>
+                      </tr>
+                      <tr class="even gradeC">
+                        <td class="sorting_1">tennis</td>
+                        <td>23.10.2016</td>
+                        <td>14:00</td>
+                        <td>VfB Stuttgart</td>
+                        <td>SV Werder Bremmen</td>
+                        <td>Verbandsliga</td>
+                        <td>Stuttgart</td>
+                      </tr>
+                      <tr class="odd gradeX">
+                        <td class="sorting_1">rugby</td>
+                        <td>30.10.2016</td>
+                        <td>11:00</td>
+                        <td>Red Bull Hornets</td>
+                        <td>Powerade Bulls</td>
+                        <td>2. Bundesliga</td>
+                        <td>Dresden</td>
+                      </tr>
+                      <tr class="even gradeC">
+                        <td class="sorting_1">handball</td>
+                        <td>02.11.2016</td>
+                        <td>16:00</td>
+                        <td>TSG Göppingen</td>
+                        <td>SV Ultra Heidelberg</td>
+                        <td>Regionalliga</td>
+                        <td>Göppingen</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        <div class="col-lg-4">
+        <div class="panel panel-default">
+          <div class="panel-heading"><i class="fa fa-info fa-fw"> </i><span>Information</span></div>
+          <div class="panel-body">
+            <div class="list-group"><a href="#" class="list-group-item"><i class="fa fa-user fa-fw"> </i><span>Name</span><span class="pull-right text-muted small">FC Bayern München</span>
+                <div class="clearfix"></div></a><a href="#" class="list-group-item"><i class="fa fa-map-marker fa-fw"> </i><span>Event location</span><span class="pull-right text-muted small">Werner-Heisenberg-Allee 25, 80939 München, Deutschland</span>
+                <div class="clearfix"></div></a><a href="#" class="list-group-item"><i class="fa fa-envelope fa-fw"> </i><span>Contact</span><span class="pull-right text-muted small">bayern.muenchen@example.com</span>
+                <div class="clearfix"></div></a><a href="#" class="list-group-item"><i class="fa fa-globe fa-fw"> </i><span>Website</span><span class="pull-right text-muted small">www.fcbayern.com</span>
+                <div class="clearfix"></div></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+                    
             </div>
         </div>
     </div>
@@ -150,65 +292,11 @@
       </div>
     </div>
   </div>
+          </div>
     
     
     
     
     
-<!--
-  <div id="page-wrapper">
-    <div class="row">
-      <h1 class="page-header">Clubs</h1>
-      
-      <div class="clearfix"></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="form-group">
-          <label for="Club Name">Club Name</label>
-          <input name="Club Name" id="clubName" type="text" class="form-control" placeholder="Club Name"/>
-        </div>
-        <div class="form-group">
-          <label for="Sport Type">Sport Type</label>
-          <input name="Sport Type" id="sportType" type="text" class="form-control" placeholder="Sport Type"/>
-        </div>
-        <div class="form-group">
-          <label for="Division">Division</label>
-          <input name="Division" id="division" type="text" class="form-control" placeholder="Division"/>
-        </div>
-        <div class="form-group">
-          <label for="Address">Sports Ground</label>
-          <input name="Address" id="addressNumber" type="text" class="form-control" placeholder="Street Number"/>
-          <input name="Address" id="addressStreet" type="text" class="form-control" placeholder="Street"/>
-          <input name="Address" id="addressPostCode" type="text" class="form-control" placeholder="Postal Code"/>
-          <input name="Address" id="city" type="text" class="form-control" placeholder="City"/>
-          <input name="Address" id="state" type="text" class="form-control" placeholder="State"/>
-        </div>
-        <div class="form-group">
-          <label for="Contact Number">Contact Number</label>
-          <input name="Contact Number" id="clubTel" type="text" class="form-control" placeholder="Telephone"/>
-        </div>
-        <div class="form-group">
-          <label for="Website">Website</label>
-          <input name="Website" id="url" type="text" class="form-control" placeholder="http://www.yourwebsite.com"/>
-        </div>
-      </div>
-      <div class="col-sm-6">
--->
-        
-          
-          
-<!--
-        <div class="form-group">
-          <img id="imgLogo" class="img-rounded img-responsive" src="http://placehold.it/350x350?text=add+team+logo"/>
-          <input name="Team Logo" id="teamLogo" type="file" class="hidden"/>
-          <label for="Team Logo"><small class="grey">Recommended size 350x350</small></label>
-        </div>
--->
-        
-<!--
-      </div>
-    </div>
-  </div>
--->
+
 </template>
