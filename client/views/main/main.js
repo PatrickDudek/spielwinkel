@@ -42,6 +42,13 @@ Router.route('/events-create', function () {
   this.render('createevent');
 });
 
+Router.route('/privacy', function () {
+  this.render('privacy');
+});
+
+Router.route('/imprint', function () {
+  this.render('imprint');
+});
 
 Template.navbar.helpers({  
   template_signup: 'login'
