@@ -57,6 +57,7 @@
   {{> navbar}} 
   {{> sidebar}} 
   {{> eventLists}} 
+{{> footer}}     
 </template>
 
 <template name="navbar">
@@ -159,4 +160,21 @@
       </div>
     </div>
   </div>
+</template>
+
+<template name="footer">
+   <footer class="navbar-default navbar-footer navbar-fixed-bottom">
+      <div>
+          <ul class="nav navbar-nav navbar-left">
+              <li><a>© 2017, spielwinkel, All rights reserved!</a></li>
+          </ul>
+      </div>
+      <div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/privacy" role="button" target="_blank">Datenschutz</a></li>
+            <li><a href="/imprint" target="_blank">Impressum</a></li>
+          </ul>
+      </div> 
+</footer>
+
 </template>
