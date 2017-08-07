@@ -1,16 +1,20 @@
-<template name="login-spielwinkel">
-  {{> loginspielwinkelcontent}} 
+<template name="create-account">
+  {{> createaccountcontent}} 
 </template>
 
-<template name="loginspielwinkelcontent">
+<template name="createaccountcontent">
 <div class="loginfield">
 	<div class="table">
 		<div class="table-cell">
 			<div class="content">
 				<ul class="content-inside">
 					<li><img src="img/spielwinkel_logo.svg"></li>
-					<li class="hl-login">login</li>
-					<li class="switch-login">Need a spielwinkel account?&nbsp;<a class="forgot" href="/create-account">Create an account</a></li>
+					<li class="hl-login">get started</li>
+					<li class="switch-login">Already have an account?&nbsp;<a class="forgot" href="/login-spielwinkel">Login</a></li>
+                    <li class="form-group-hl">Email</li>
+					<li class="form-group">
+						<input type="username" class="form-control" id="email">
+					</li>
 					<li class="form-group-hl">Username</li>
 					<li class="form-group">
 						<input type="username" class="form-control" id="username">
@@ -22,13 +26,21 @@
 					<li>
                         <button type="button" class="btn btn-primary">Get started</button>
                     </li>
+                    <li class="hr-with-text">
+                        <span>or</span>
+                    </li>
                     <li class="alignc">
-                        <a class="forgot" href="#">Forgot username?</a>&nbsp;&middot;&nbsp;
-                        <a class="forgot" href="#">Forgot password?</a>
+                        <button type="button" class="btn btn-primary facebook forgot">Facebook</button>
+                        <button type="button" class="btn btn-primary google forgot">Google+</button>
                     </li>
                     <li>
+                        <p class="login-rights">By clicking this button, you agree to spielwinkels<a class="forgot" href="/privacy"> Datenschutz</a> &  <a class="forgot" href="#">Nutzungsbedingungen</a></p>
+                    </li>
+                    <li class="alignc">
                         <p class="login-rights">© 2017, spielwinkel, All rights reserved! <a class="forgot" href="/privacy"> Datenschutz</a> &  <a class="forgot" href="/imprint">Impressum</a></p>
                     </li>
+                    
+                    
 				</ul>
 			</div>
 		</div>

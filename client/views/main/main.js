@@ -54,6 +54,10 @@ Router.route('/login-spielwinkel', function () {
   this.render('login-spielwinkel');
 });
 
+Router.route('/create-account', function () {
+  this.render('create-account');
+});
+
 Template.navbar.helpers({  
   template_signup: 'login'
 });

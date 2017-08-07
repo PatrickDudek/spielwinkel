@@ -530,9 +530,9 @@ position: relative;
 .content {
 	margin: 0 auto;
     text-align: left;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 76%;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 
 .content-inside {
@@ -545,6 +545,7 @@ position: relative;
     width: 80%;
     margin-right: 10%;
     margin-left: 10%;
+    margin-top: 20px;
 }
 
 .content-inside li {
@@ -561,8 +562,8 @@ position: relative;
 
 .hl-login {
     text-align: center;
-    font-size: 40px !important;
-    margin-top: 30px;
+    font-size: 30px !important;
+    margin-top: 20px;
     position: relative;
     font-weight: 500 !important;
 }
@@ -578,18 +579,34 @@ position: relative;
     min-width: 100% !important;
     background: #3CBFF0 !important;
     border: 0px solid black !important;
-    height: 50px !important;
+    height: 40px !important;
     margin-top: 20px;
 }
 
+.alignc .btn-primary {
+    min-width: 46% !important;
+    text-decoration: none;
+    margin-top: 0px !important;
+}
+
+.facebook{
+    margin-right: 2%;
+    float: left;
+}
+
+.google{
+    margin-left: 2%;
+    float: right;
+}
+
 .form-group {
-    margin-bottom: 20px !important;
+    margin-bottom: 10px !important;
 /*    margin-top: 10px !important;*/
    
 }
 
 .form-group input {
-     height: 50px;
+     height: 40px;
 }
 
 .form-group-hl {
@@ -598,7 +615,7 @@ position: relative;
 
 .alignc {
     text-align: center;
-    line-height: 80px;
+    line-height: 40px;
 }
 
 .forgot {
@@ -620,6 +637,8 @@ position: relative;
     opacity: .6;
     margin-top: 30px;
     margin-bottom: 0px;
+    line-height: 0px;
+    text-align: left;
 }
 
 .forgot:hover {
@@ -647,4 +666,38 @@ position: relative;
 
 .ad-container img {
     position: absolute;
+}
+
+
+.hr-with-text {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
+  margin: 15px 0 20px;
+}
+
+.hr-with-text > span {
+  position: relative;
+  display: inline-block;
+}
+
+.hr-with-text > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.hr-with-text > span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.hr-with-text > span:before, .hr-with-text > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: rgba(178, 190, 199, 0.5);
 }
