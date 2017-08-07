@@ -495,5 +495,156 @@ position: relative;
     margin: 10px 0;
     width: 250px;
     height: auto;
-    
+}
+
+.loginfield {
+	    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(255,255,255,.97);
+    width: 34%;
+    display: block;
+    z-index: 4;
+}
+
+.table {
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.table .table-cell {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.content {
+	margin: 0 auto;
+    text-align: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.content-inside {
+	    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+.content-inside img{
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.content-inside li {
+	
+
+/*    text-transform: lowercase;*/
+    font-weight: 200;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    font-size: 12pt;
+}
+
+.hl-login {
+    text-align: center;
+    font-size: 40px !important;
+    margin-top: 30px;
+    position: relative;
+    font-weight: 500 !important;
+}
+
+.switch-login {
+    font-size: 12pt;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 100;
+}
+
+.btn-primary {
+    min-width: 100% !important;
+    background: #3CBFF0 !important;
+    border: 0px solid black !important;
+    height: 50px !important;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px !important;
+/*    margin-top: 10px !important;*/
+   
+}
+
+.form-group input {
+     height: 50px;
+}
+
+.form-group-hl {
+    font-weight: 500 !important;
+}
+
+.alignc {
+    text-align: center;
+    line-height: 80px;
+}
+
+.forgot {
+    border-bottom: 1px solid;
+    line-height: normal;
+}
+
+.password {
+    margin-top: 0px !important;
+}
+
+.form-group-hl {
+    margin-bottom: 8px;
+}
+
+.login-rights {
+    font-size: 13px !important;
+    color: #484848;
+    opacity: .6;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.forgot:hover {
+    text-decoration: none !important;
+}
+
+.adfield {
+    width: 100%;
+    position: absolute;
+/*    background-image: url(../img/adpic4.jpg)*/
+    overflow: hidden;
+    height: 100%;
+    background-position: center;
+}
+
+.ad-container {
+    margin-left: 0%;
+    float: right;
+    height: auto;
+    width: 100%;
+    position: ;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.ad-container img {
+    position: absolute;
 }

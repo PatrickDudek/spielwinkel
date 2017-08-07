@@ -50,6 +50,10 @@ Router.route('/imprint', function () {
   this.render('imprint');
 });
 
+Router.route('/login-spielwinkel', function () {
+  this.render('login-spielwinkel');
+});
+
 Template.navbar.helpers({  
   template_signup: 'login'
 });
