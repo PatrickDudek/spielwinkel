@@ -508,7 +508,7 @@ position: relative;
     z-index: 4;
 }
 
-.table {
+.loginfield .table {
 	position: absolute;
     top: 0;
     right: 0;
@@ -575,7 +575,7 @@ position: relative;
     font-weight: 100;
 }
 
-.btn-primary {
+.loginfield .btn-primary {
     min-width: 100% !important;
     background: #3CBFF0 !important;
     border: 0px solid black !important;
